@@ -1,90 +1,137 @@
-
 <!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cafe Cozy</title>
+    <title>Profil Diri - Nama Anda</title>
     <link rel="stylesheet" href="styles.css">
     <script defer src="scripts.js"></script>
 </head>
 <body>
 
-    <header>
+    <header id="header">
         <div class="container">
-            <h1>Cafe Cozy</h1>
+            <h1>Nama Anda</h1>
+            <p>Web Developer | Graphic Designer | Content Creator</p>
             <nav>
                 <ul>
-                    <li><a href="#menu">Menu</a></li>
-                    <li><a href="#galeri">Galeri</a></li>
-                    <li><a href="#lokasi">Lokasi</a></li>
-                    <li><a href="#kontak">Kontak</a></li>
+                    <li><a href="#about">Tentang Saya</a></li>
+                    <li><a href="#experience">Pengalaman</a></li>
+                    <li><a href="#skills">Keterampilan</a></li>
+                    <li><a href="#portfolio">Portofolio</a></li>
+                    <li><a href="#contact">Kontak</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <section id="hero">
+    <section id="about">
         <div class="container">
-            <h2>Selamat Datang di Cafe Cozy</h2>
-            <p>Tempat yang nyaman untuk secangkir kopi dan obrolan hangat.</p>
-            <a href="#menu" class="btn">Lihat Menu</a>
+            <h2>Tentang Saya</h2>
+            <img src="profil.jpg" alt="Foto Profil" class="profil-img">
+            <p>Halo, nama saya <strong>Nama Anda</strong>. Saya adalah seorang web developer dan graphic designer dengan pengalaman lebih dari 5 tahun dalam industri teknologi. Saya memiliki ketertarikan dalam membuat desain yang fungsional dan estetis, serta berkontribusi pada proyek-proyek kreatif dan inovatif. Selain itu, saya juga berpengalaman dalam membuat konten digital untuk berbagai platform.</p>
         </div>
     </section>
 
-    <section id="menu">
+    <section id="experience">
         <div class="container">
-            <h2>Menu Spesial Kami</h2>
-            <div class="menu-item">
-                <h3>Espresso</h3>
-                <p>Rp 20.000</p>
-            </div>
-            <div class="menu-item">
-                <h3>Latte</h3>
-                <p>Rp 25.000</p>
-            </div>
-            <div class="menu-item">
-                <h3>Affogato</h3>
-                <p>Rp 30.000</p>
-            </div>
-            <div class="menu-item">
-                <h3>Cappuccino</h3>
-                <p>Rp 28.000</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="galeri">
-        <div class="container">
-            <h2>Galeri Cafe</h2>
-            <div class="gallery">
-                <img src="cafe1.jpg" alt="Interior Cafe">
-                <img src="cafe2.jpg" alt="Menu Kopi">
-                <img src="cafe3.jpg" alt="Kursi Outdoor">
-                <img src="cafe4.jpg" alt="Suasana Malam Hari">
+            <h2>Pengalaman Kerja</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>Web Developer - ABC Corp</h3>
+                    <span>Januari 2021 - Sekarang</span>
+                    <p>Mengerjakan pengembangan website untuk klien lokal dan internasional menggunakan teknologi terbaru seperti HTML, CSS, JavaScript, dan framework modern.</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>Graphic Designer - XYZ Studio</h3>
+                    <span>Agustus 2018 - Desember 2020</span>
+                    <p>Membuat desain logo, brosur, serta materi promosi digital untuk perusahaan startup dan usaha kecil. Fokus pada branding yang menarik dan konsisten.</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>Content Creator - Freelance</h3>
+                    <span>Juni 2016 - Juli 2018</span>
+                    <p>Membuat konten video dan artikel untuk blog dan media sosial dengan fokus pada topik teknologi dan desain.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="lokasi">
+    <section id="skills">
         <div class="container">
-            <h2>Lokasi Kami</h2>
-            <p>Jalan Kenangan No. 123, Jakarta</p>
-            <!-- Sisipkan peta Google Maps -->
+            <h2>Keterampilan</h2>
+            <div class="skills">
+                <div class="skill">
+                    <h3>HTML</h3>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 90%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h3>CSS</h3>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 85%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h3>JavaScript</h3>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 80%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h3>Photoshop</h3>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 75%;"></div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section id="kontak">
+    <section id="portfolio">
         <div class="container">
-            <h2>Kontak Kami</h2>
-            <p>Email: cafe.cozy@example.com</p>
+            <h2>Portofolio</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <img src="project1.jpg" alt="Project 1">
+                    <h4>Project Website A</h4>
+                </div>
+                <div class="portfolio-item">
+                    <img src="project2.jpg" alt="Project 2">
+                    <h4>Project Mobile App B</h4>
+                </div>
+                <div class="portfolio-item">
+                    <img src="project3.jpg" alt="Project 3">
+                    <h4>Graphic Design Project C</h4>
+                </div>
+                <div class="portfolio-item">
+                    <img src="project4.jpg" alt="Project 4">
+                    <h4>Content Creation Project D</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Kontak Saya</h2>
+            <form id="contactForm">
+                <label for="name">Nama:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Pesan:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Kirim Pesan</button>
+            </form>
+            <p>Email: namasaya@example.com</p>
             <p>Telepon: 0812-3456-7890</p>
         </div>
     </section>
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 Cafe Cozy. All Rights Reserved.</p>
+            <p>&copy; 2024 Nama Anda. All Rights Reserved.</p>
         </div>
     </footer>
 
