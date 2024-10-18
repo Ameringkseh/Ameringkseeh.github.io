@@ -1,60 +1,126 @@
-
+html
+Salin kode
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Web | Portofolio</title>
-  </head>
-  <body>
-    <div class="container">
-      <div class="sidebar">
-        <nav>
-          <ul>
-            <li><a href="">About</a></li>
-            <li><a href="">Portofolio</a></li>
-            <li><a href="">Blog</a></li>
-            <li><a href="">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
-      <main class="content">
-        <section class="hero">
-          <img src="online.png" alt="" />
-          <div class="hero-content">
-            <h1>Profesi</h1>
-            <br />
-            <h2>Junior Content Writer at Dicoding</h2>
-            <br /><br />
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, aperiam dolore
-              assumenda velit repellendus recusandae magni consectetur mollitia facere incidunt
-              inventore perspiciatis debitis doloribus ullam minima culpa voluptatem. Repellendus,
-              option.
-            </p>
-            <a href="" class="action-btn">Profile Saya</a>
-          </div>
-        </section>
-      </main>
-      <div class="footer">
-        <footer>
-          <ul>
-            <li>
-              <img src="instagram.png" alt="" /><a><p>Instagram</p></a>
-            </li>
-            <li>
-              <img src="facebook.png" alt="" /><a><p>Facebook</p></a>
-            </li>
-            <li>
-              <img src="twitter.png" alt="" /><a><p>Twitter</p></a>
-            </li>
-            <li>
-              <img src="telegram.png" alt="" /><a><p>Telegram</p></a>
-            </li>
-          </ul>
-        </footer>
-      </div>
-    </div>
-  </body>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nama Cafe Anda</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            background-color: #34495e;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        section {
+            padding: 50px;
+            text-align: center;
+        }
+        section h2 {
+            color: #34495e;
+        }
+        #menu, #galeri {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        #menu div, #galeri div {
+            background-color: white;
+            margin: 10px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 200px;
+            text-align: center;
+        }
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Selamat Datang di Cafe Kami</h1>
+    </header>
+
+    <nav>
+        <a href="#menu">Menu</a>
+        <a href="#galeri">Galeri</a>
+        <a href="#lokasi">Lokasi</a>
+        <a href="#kontak">Kontak</a>
+    </nav>
+
+    <section id="menu">
+        <h2>Menu</h2>
+        <div>
+            <h3>Kopi Hitam</h3>
+            <p>Rp 15,000</p>
+        </div>
+        <div>
+            <h3>Latte</h3>
+            <p>Rp 25,000</p>
+        </div>
+        <div>
+            <h3>Cappuccino</h3>
+            <p>Rp 30,000</p>
+        </div>
+    </section>
+
+    <section id="galeri">
+        <h2>Galeri</h2>
+        <div>
+            <img src="foto-cafe1.jpg" alt="Suasana Cafe" style="width:100%">
+            <p>Suasana Cozy di dalam cafe</p>
+        </div>
+        <div>
+            <img src="foto-cafe2.jpg" alt="Menu Spesial" style="width:100%">
+            <p>Menu Spesial Kami</p>
+        </div>
+    </section>
+
+    <section id="lokasi">
+        <h2>Lokasi</h2>
+        <p>Jalan Mawar No. 123, Jakarta</p>
+        <!-- Anda bisa menyisipkan Google Maps disini -->
+    </section>
+
+    <section id="kontak">
+        <h2>Kontak Kami</h2>
+        <p>Email: cafe@example.com</p>
+        <p>Telepon: 0812-3456-7890</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Cafe Anda. All Rights Reserved.</p>
+    </footer>
+
+</body>
 </html>
